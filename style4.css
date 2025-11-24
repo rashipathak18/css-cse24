@@ -9,18 +9,25 @@
 .container{
     display:flex;
     border: 2px double black;
-    height: 200px;
-    width:800px;
+    height: 600px;
+    width:1200px;
     flex-direction:row-reverse;
     flex-wrap: wrap;
 background-color: rgb(209, 196, 172);
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px,20px;
+    align-content: center;
+    gap: 30px,30px;
 }
 .item{
-    height:50px;
-    width:300px;
+    height:100px;
+    width:200px;
     border: 2px dotted rgb(16, 20, 2);
-    background-color: rgb(128, 200, 224);
+    background-color: rgb(184, 233, 252);
+    flex-grow: 1;
+}
+.item4{
+    order: -1;
+    flex-grow: 2;
+    align-self: flex-end;
 }
