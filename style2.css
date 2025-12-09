@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 1rem;
+}
+.logo{
+    color: red;
+    font-size: 1.5rem;
+
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: rgb(37, 27, 27);
+
+}
+.menu a {
+    color: #f7e412;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+}
+.hamburger{
+    font-size: 2rem;
+    color:red;
+    cursor: pointer;
+}
+/* tablet &desktop */
+@media(min-width: 760px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        color: burlywood;
+    }
+
+.hamburger{
+    display: none;
+
+}
+}
